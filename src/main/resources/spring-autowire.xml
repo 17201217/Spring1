@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+ http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-4.3.xsd
+">
+
+    <!--不用自动装载的方式,原始装载方式-->
+
+<!--    <bean id="car" class="com.springrain.entity.Car">-->
+<!--        <property name="id" value="1"></property>-->
+<!--        <property name="name" value="宝马"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="person" class="com.springrain.entity.Person">-->
+<!--        <property name="id" value="1"></property>-->
+<!--        <property name="name" value="张三"></property>-->
+<!--        <property name="car" ref="car"></property>-->
+<!--    </bean>-->
+
+
+<!--    &lt;!&ndash;使用自动装载方式1  byName：通过属性名⾃动装载,注意自动装载的名字与实体类成员的名字需要一致&ndash;&gt;-->
+<!--        <bean id="car" class="com.springrain.entity.Car">-->
+<!--            <property name="id" value="11"></property>-->
+<!--            <property name="name" value="宝马1"></property>-->
+<!--        </bean>-->
+
+<!--        <bean id="person" class="com.springrain.entity.Person" autowire="byName">-->
+<!--            <property name="id" value="11"></property>-->
+<!--            <property name="name" value="张三1"></property>-->
+<!--        </bean>-->
+
+    <!--使用自动装载方式1  byType：通过属性的数据类型⾃动装载,只要成员类型与实体类的名字一样,就会自动装载,但这种方式很容易出现问题-->
+            <bean id="carss" class="com.springrain.entity.Car">
+                <property name="id" value="12"></property>
+                <property name="name" value="宝马2"></property>
+            </bean>
+
+            <bean id="person" class="com.springrain.entity.Person" autowire="byType">
+                <property name="id" value="12"></property>
+                <property name="name" value="张三2"></property>
+            </bean>
+
+</beans>

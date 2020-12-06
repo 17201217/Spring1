@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+ http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-4.3.xsd
+">
+
+    <!--测试p命名空间-->
+<!--    <bean id="student" class="com.springrain.entity.Student" p:id="1" p:name="张三11" p:age="2" p:address-ref="address">-->
+
+<!--    </bean>-->
+
+<!--    <bean id="address" class="com.springrain.entity.Address" p:id="1" p:name="科技路">-->
+
+<!--    </bean>-->
+
+
+
+
+</beans>
